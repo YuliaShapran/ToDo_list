@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>ToDo List</title>
+</head>
+<body>
+	<main class="wrapper">
+		<section class="greeting">
+			<img src="img/pen-and-paper-to-do-list.jpg" alt="todo">
+			<h1 class="title">Hi, champ!</h1>
+			<div id="date"></div>
+		</section>
+		<section class="create-todo">
+			<h2>CREATE A TODO</h2>
+			<form id="new-todo-form">
+				<h3>What's on your todo?</h3>
+				<input type="text" placeholder="e.g. Clear house" name="content" id="content" />
+			
+				<h3>Pick a category</h3>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" />
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+			
+				<input type="submit" value="Add todo" />
+			</form>
+		</section>
+
+		<section class="todo-list">
+			<h3>TODO LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+	</main>	
+	<script src="js/main.js"></script>
+</body>
+</html>
